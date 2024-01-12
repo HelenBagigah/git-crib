@@ -262,7 +262,7 @@ Git сообщит об этом с помощью статуса `modified`: ф
 graph LR;
   untracked -- "git add" --> staged;
   staged -- "git commit" --> tracked/comitted;
-  tracked -- "изменения" --> modified;
+  tracked/committed -- "изменения" --> modified;
   modified -- "git add" --> staged
 ```
 
