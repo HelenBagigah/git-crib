@@ -260,10 +260,7 @@ Git сообщит об этом с помощью статуса `modified`: ф
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged;
-  staged -- "git commit" --> tracked/comitted;
-  tracked/committed -- "изменения" --> modified;
-  modified -- "git add" --> staged
+  untracked -- "git add" --> staged -- "git commit" --> tracked/comitted -- "изменения" --> modified -- "git add" --> staged
 ```
 
 1. Файл только что создали. Git ещё не отслеживает содержимое этого файла. Состояние: `untracked`.
